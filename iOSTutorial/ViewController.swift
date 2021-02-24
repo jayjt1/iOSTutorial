@@ -29,6 +29,8 @@ class ViewController: UIViewController, Person2, DelegateDemo {
         userDefaults.set(true, forKey: "isRegistered")
         userDefaults.set(10, forKey: "age")
         
+        print("Hello")
+        
         let first_name  = userDefaults.string(forKey: "name1")
         let second_name = userDefaults.string(forKey: "name2")
         let third_name = userDefaults.string(forKey: "name3")
