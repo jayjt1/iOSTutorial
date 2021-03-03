@@ -7,11 +7,14 @@
 //
 
 import UIKit
+
 class Util {
+    
+//    static let sharedUtil = Util()
     
     func showToast(view : UIView, message : String) {
 
-        let toastLabel = UILabel(frame: CGRect(x: view.frame.size.width/2 - 40, y: view.frame.size.height-100, width: 230, height: 35))
+        let toastLabel = UILabel(frame: CGRect(x: view.frame.size.width/2 - 40, y: view.frame.size.height-100, width: 150, height: 35))
         toastLabel.backgroundColor = UIColor.black.withAlphaComponent(0.6)
         toastLabel.textColor = UIColor.white
         toastLabel.textAlignment = .center;
@@ -27,4 +30,8 @@ class Util {
             toastLabel.removeFromSuperview()
         })
     }
+    
+    
 }
+
+

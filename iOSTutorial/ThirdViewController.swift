@@ -26,6 +26,10 @@ class ThirdViewController : ViewController, UITableViewDataSource, UITableViewDe
         
     }
     
+}
+
+extension ThirdViewController {
+    
     // custom methods
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -45,17 +49,17 @@ class ThirdViewController : ViewController, UITableViewDataSource, UITableViewDe
         cell.lblDesc.text = desc[indexPath.row]
         
         
-//        let cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier:"table")
-//        cell.textLabel?.text = names[indexPath.row]
+        //        let cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier:"table")
+        //        cell.textLabel?.text = names[indexPath.row]
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-       // let welcomeMsg : String = "Welcome \(names[indexPath.row])"
+        // let welcomeMsg : String = "Welcome \(names[indexPath.row])"
         
-      //  util.showToast(view: self.view, message: welcomeMsg)
+        //  util.showToast(view: self.view, message: welcomeMsg)
         
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
         

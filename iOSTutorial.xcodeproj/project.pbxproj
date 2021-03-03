@@ -7,19 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		69B0929525ECBF8300FCEDBD /* UtilExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B0929425ECBF8300FCEDBD /* UtilExtension.swift */; };
+		69B0929725ECC3D800FCEDBD /* AutoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B0929625ECC3D800FCEDBD /* AutoViewController.swift */; };
 		69B7AC7725E37A5D00C864EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B7AC7625E37A5D00C864EC /* AppDelegate.swift */; };
 		69B7AC7925E37A5D00C864EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B7AC7825E37A5D00C864EC /* ViewController.swift */; };
 		69B7AC7C25E37A5D00C864EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69B7AC7A25E37A5D00C864EC /* Main.storyboard */; };
 		69B7AC7E25E37A5E00C864EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69B7AC7D25E37A5E00C864EC /* Assets.xcassets */; };
 		69B7AC8125E37A5E00C864EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69B7AC7F25E37A5E00C864EC /* LaunchScreen.storyboard */; };
+		69C1130325E8C9F800E9CA9B /* iOSTutorial.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 69C1130125E8C9F800E9CA9B /* iOSTutorial.xcdatamodeld */; };
+		69C1130525E8CCBA00E9CA9B /* CoreDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C1130425E8CCBA00E9CA9B /* CoreDataViewController.swift */; };
 		69DF06C925E6255F003690B8 /* CustomTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DF06C825E6255F003690B8 /* CustomTableCell.swift */; };
 		69DF06CB25E62C82003690B8 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DF06CA25E62C82003690B8 /* Util.swift */; };
 		69DF06CD25E630D9003690B8 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DF06CC25E630D9003690B8 /* FourthViewController.swift */; };
 		69DF06CF25E6311D003690B8 /* CustomGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DF06CE25E6311D003690B8 /* CustomGridCell.swift */; };
+		69DF06D725E76F3A003690B8 /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DF06D625E76F3A003690B8 /* FifthViewController.swift */; };
+		69DF06D925E77636003690B8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DF06D825E77636003690B8 /* User.swift */; };
+		69DF06DB25E779F5003690B8 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69DF06DA25E779F5003690B8 /* Alamofire.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		69F6B71525E38191003A5FFA /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F6B71425E38191003A5FFA /* SecondViewController.swift */; };
 		69F6B71725E3841B003A5FFA /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F6B71625E3841B003A5FFA /* ThirdViewController.swift */; };
-		69F6B71925E3A818003A5FFA /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69F6B71825E3A818003A5FFA /* SwiftyJSON.framework */; };
-		69F6B71B25E3A81B003A5FFA /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69F6B71A25E3A81B003A5FFA /* Alamofire.framework */; };
 		69F6B72325E4CF5B003A5FFA /* Person2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F6B72225E4CF5B003A5FFA /* Person2.swift */; };
 		69F6B72725E4D4A5003A5FFA /* DelegateDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F6B72625E4D4A5003A5FFA /* DelegateDemo.swift */; };
 		6F465F41E5AB8775B10735B1 /* Pods_iOSTutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97BA0D5C667E7CF59346B7D7 /* Pods_iOSTutorial.framework */; };
@@ -27,6 +32,9 @@
 
 /* Begin PBXFileReference section */
 		4E593E98ED1B0A04BA682198 /* Pods-iOSTutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSTutorial.debug.xcconfig"; path = "Target Support Files/Pods-iOSTutorial/Pods-iOSTutorial.debug.xcconfig"; sourceTree = "<group>"; };
+		69B0929425ECBF8300FCEDBD /* UtilExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilExtension.swift; sourceTree = "<group>"; };
+		69B0929625ECC3D800FCEDBD /* AutoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoViewController.swift; sourceTree = "<group>"; };
+		69B0929825EF4E3000FCEDBD /* iOSTutorial.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iOSTutorial.entitlements; sourceTree = "<group>"; };
 		69B7AC7325E37A5D00C864EC /* iOSTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69B7AC7625E37A5D00C864EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69B7AC7825E37A5D00C864EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -34,10 +42,15 @@
 		69B7AC7D25E37A5E00C864EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69B7AC8025E37A5E00C864EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		69B7AC8225E37A5E00C864EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69C1130225E8C9F800E9CA9B /* iOSTutorial.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iOSTutorial.xcdatamodel; sourceTree = "<group>"; };
+		69C1130425E8CCBA00E9CA9B /* CoreDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataViewController.swift; sourceTree = "<group>"; };
 		69DF06C825E6255F003690B8 /* CustomTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableCell.swift; sourceTree = "<group>"; };
 		69DF06CA25E62C82003690B8 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		69DF06CC25E630D9003690B8 /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 		69DF06CE25E6311D003690B8 /* CustomGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomGridCell.swift; sourceTree = "<group>"; };
+		69DF06D625E76F3A003690B8 /* FifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
+		69DF06D825E77636003690B8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		69DF06DA25E779F5003690B8 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		69F6B71425E38191003A5FFA /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		69F6B71625E3841B003A5FFA /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		69F6B71825E3A818003A5FFA /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,8 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69F6B71B25E3A81B003A5FFA /* Alamofire.framework in Frameworks */,
-				69F6B71925E3A818003A5FFA /* SwiftyJSON.framework in Frameworks */,
+				69DF06DB25E779F5003690B8 /* Alamofire.framework in Frameworks */,
 				6F465F41E5AB8775B10735B1 /* Pods_iOSTutorial.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -92,12 +104,16 @@
 		69B7AC7525E37A5D00C864EC /* iOSTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				69B0929825EF4E3000FCEDBD /* iOSTutorial.entitlements */,
 				69B7AC7625E37A5D00C864EC /* AppDelegate.swift */,
 				69B7AC7825E37A5D00C864EC /* ViewController.swift */,
 				69F6B71425E38191003A5FFA /* SecondViewController.swift */,
 				69F6B71625E3841B003A5FFA /* ThirdViewController.swift */,
-				69DF06C825E6255F003690B8 /* CustomTableCell.swift */,
 				69DF06CC25E630D9003690B8 /* FourthViewController.swift */,
+				69DF06D625E76F3A003690B8 /* FifthViewController.swift */,
+				69B0929625ECC3D800FCEDBD /* AutoViewController.swift */,
+				69C1130425E8CCBA00E9CA9B /* CoreDataViewController.swift */,
+				69DF06C825E6255F003690B8 /* CustomTableCell.swift */,
 				69DF06CE25E6311D003690B8 /* CustomGridCell.swift */,
 				69B7AC7A25E37A5D00C864EC /* Main.storyboard */,
 				69B7AC7D25E37A5E00C864EC /* Assets.xcassets */,
@@ -106,6 +122,9 @@
 				69F6B72225E4CF5B003A5FFA /* Person2.swift */,
 				69F6B72625E4D4A5003A5FFA /* DelegateDemo.swift */,
 				69DF06CA25E62C82003690B8 /* Util.swift */,
+				69DF06D825E77636003690B8 /* User.swift */,
+				69C1130125E8C9F800E9CA9B /* iOSTutorial.xcdatamodeld */,
+				69B0929425ECBF8300FCEDBD /* UtilExtension.swift */,
 			);
 			path = iOSTutorial;
 			sourceTree = "<group>";
@@ -113,6 +132,7 @@
 		BEE63DE1249659A50A51880A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				69DF06DA25E779F5003690B8 /* Alamofire.framework */,
 				69F6B71A25E3A81B003A5FFA /* Alamofire.framework */,
 				69F6B71825E3A818003A5FFA /* SwiftyJSON.framework */,
 				97BA0D5C667E7CF59346B7D7 /* Pods_iOSTutorial.framework */,
@@ -154,6 +174,11 @@
 				TargetAttributes = {
 					69B7AC7225E37A5D00C864EC = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -238,10 +263,16 @@
 				69B7AC7925E37A5D00C864EC /* ViewController.swift in Sources */,
 				69F6B71525E38191003A5FFA /* SecondViewController.swift in Sources */,
 				69F6B71725E3841B003A5FFA /* ThirdViewController.swift in Sources */,
+				69C1130525E8CCBA00E9CA9B /* CoreDataViewController.swift in Sources */,
+				69DF06D725E76F3A003690B8 /* FifthViewController.swift in Sources */,
+				69B0929525ECBF8300FCEDBD /* UtilExtension.swift in Sources */,
 				69DF06CD25E630D9003690B8 /* FourthViewController.swift in Sources */,
 				69DF06CB25E62C82003690B8 /* Util.swift in Sources */,
 				69F6B72325E4CF5B003A5FFA /* Person2.swift in Sources */,
 				69DF06CF25E6311D003690B8 /* CustomGridCell.swift in Sources */,
+				69DF06D925E77636003690B8 /* User.swift in Sources */,
+				69B0929725ECC3D800FCEDBD /* AutoViewController.swift in Sources */,
+				69C1130325E8C9F800E9CA9B /* iOSTutorial.xcdatamodeld in Sources */,
 				69B7AC7725E37A5D00C864EC /* AppDelegate.swift in Sources */,
 				69F6B72725E4D4A5003A5FFA /* DelegateDemo.swift in Sources */,
 				69DF06C925E6255F003690B8 /* CustomTableCell.swift in Sources */,
@@ -391,7 +422,9 @@
 			baseConfigurationReference = 4E593E98ED1B0A04BA682198 /* Pods-iOSTutorial.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = iOSTutorial/iOSTutorial.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RDA43GQ64T;
 				INFOPLIST_FILE = iOSTutorial/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -409,7 +442,9 @@
 			baseConfigurationReference = C9A68B32F9682B1222951130 /* Pods-iOSTutorial.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = iOSTutorial/iOSTutorial.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RDA43GQ64T;
 				INFOPLIST_FILE = iOSTutorial/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -444,6 +479,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		69C1130125E8C9F800E9CA9B /* iOSTutorial.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				69C1130225E8C9F800E9CA9B /* iOSTutorial.xcdatamodel */,
+			);
+			currentVersion = 69C1130225E8C9F800E9CA9B /* iOSTutorial.xcdatamodel */;
+			path = iOSTutorial.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 69B7AC6B25E37A5D00C864EC /* Project object */;
 }
