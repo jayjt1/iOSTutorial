@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController, Person2, DelegateDemo {
    
+    @IBOutlet weak var lblDate: UILabel!
     var name: String = "Jayant"
     var adreess: String = "Mumbai"
     var age: Int = 30
@@ -43,8 +44,6 @@ class ViewController: UIViewController, Person2, DelegateDemo {
         print(age)
         
         lblFirst?.text = "Welcome to iOS Tutorial"
-        
-        
         var myArray : [String] = ["Saket", "Jayant", "Imran", "Kajal", "Pallavi", "Tejaswi", "Lokesh", "Vaibhav"]
         
         var  myDictionary : [String : String] = ["Saket" : "Manager", "Jayant" : "Developer",
@@ -61,13 +60,16 @@ class ViewController: UIViewController, Person2, DelegateDemo {
        // doGuard()
         
         var add = addNumber(value1: 11.98978, value2: 21.87665)
-        
         print("Addition is :\(add)")
-        
         doOptional()
-        
         let util = Util()
-                
+        lblDate.text = "Date not updated"
+        
+    }
+    func updateUI() {
+        
+        let date = Date()
+        lblDate.text = "\(date)"
     }
     
     func doDefer() {
@@ -104,7 +106,7 @@ class ViewController: UIViewController, Person2, DelegateDemo {
     func doGuard() {
         
         var managerName : String? = "Saket Newaskar"
-    
+        
 //        if let myname = managerName {
 //
 //            print("if condition")
@@ -133,8 +135,8 @@ class ViewController: UIViewController, Person2, DelegateDemo {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-         print("ViewController viewDidAppear called")
         
+        print("ViewController viewDidAppear called")
         print(reading())
         print(walking())
         print(sleeping())
@@ -143,8 +145,6 @@ class ViewController: UIViewController, Person2, DelegateDemo {
             (value1 : Int, value2 : Int) -> Int in
             return value1 + value2
         }
-        
-        
         let summation = sum(10, 20)
         
         print("Sum is : \(summation)")
@@ -177,11 +177,10 @@ class ViewController: UIViewController, Person2, DelegateDemo {
 //        secondViewController.delegagteDemo = self
 //        present(secondViewController, animated: true, completion: nil)
         
-        performSegue(withIdentifier: "auto", sender: self)
+        performSegue(withIdentifier: "media", sender: self)
     }
     
     // protocol methods
-
     
     func reading() -> String {
         return "\(name) aged \(age) years is reading book"
@@ -220,6 +219,16 @@ class ViewController: UIViewController, Person2, DelegateDemo {
         else if segue.identifier == "auto" {
             
             let autoViewController = segue.destination as! AutoViewController
+        }
+        
+        else if segue.identifier == "maps" {
+            
+            let mapsViewController = segue.destination as! MapsViewController
+        }
+        
+        else if segue.identifier == "media" {
+            
+            segue.destination as! AudioVideoViewController
         }
     }
 }

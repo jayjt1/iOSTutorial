@@ -32,6 +32,11 @@ class Util {
     }
     
     
+    @objc static func displayMsg() {
+        print("Thread Called")
+    }
+    
+    
 }
 
 

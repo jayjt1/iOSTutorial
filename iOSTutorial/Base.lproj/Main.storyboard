@@ -44,17 +44,27 @@
                                     <segue destination="5jZ-KA-vvy" kind="embed" id="VXS-YH-w5b"/>
                                 </connections>
                             </containerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTl-WK-9bU">
+                                <rect key="frame" x="34" y="109" width="260" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="3Qh-gN-fnx"/>
                     <connections>
+                        <outlet property="lblDate" destination="NTl-WK-9bU" id="8Dc-3g-6ab"/>
                         <outlet property="lblFirst" destination="GbH-K0-VM5" id="gD9-G2-6iY"/>
                         <segue destination="1Eq-qe-NyY" kind="show" identifier="fifth" id="DNj-vY-g7M"/>
                         <segue destination="jG8-Kf-ujS" kind="show" identifier="second" id="iAf-oZ-irn"/>
                         <segue destination="Ylc-tH-pXb" kind="show" identifier="coredata" id="rda-Iz-BX5"/>
                         <segue destination="lub-xw-qdB" kind="show" identifier="auto" id="1GT-5O-fpu"/>
+                        <segue destination="fFk-P9-I8M" kind="show" identifier="maps" id="RAt-er-lVi"/>
+                        <segue destination="SXe-l3-fgP" kind="show" identifier="media" id="Mnt-WR-H6i"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -132,7 +142,6 @@
                                 </state>
                                 <connections>
                                     <action selector="btnSecondClicked:" destination="jG8-Kf-ujS" eventType="touchUpInside" id="EDN-RI-57e"/>
-                                    <segue destination="gc0-uj-tNE" kind="show" id="fcw-0d-P8Z"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mY5-5O-sO7">
@@ -148,11 +157,80 @@
                     </view>
                     <connections>
                         <outlet property="lblSecond" destination="mY5-5O-sO7" id="fop-SO-50E"/>
+                        <segue destination="gc0-uj-tNE" kind="show" id="Ft1-uJ-59I"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="piH-ah-Q7g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1842" y="618"/>
+        </scene>
+        <!--Maps View Controller-->
+        <scene sceneID="BeM-Nf-4tm">
+            <objects>
+                <viewController storyboardIdentifier="MapsViewController" id="fFk-P9-I8M" customClass="MapsViewController" customModule="iOSTutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hQW-Jl-xv4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="VAH-h1-PcZ">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="XhK-iH-Vqo" firstAttribute="bottom" secondItem="VAH-h1-PcZ" secondAttribute="bottom" id="GDi-RN-PQ2"/>
+                            <constraint firstItem="VAH-h1-PcZ" firstAttribute="top" secondItem="XhK-iH-Vqo" secondAttribute="top" id="MzY-nb-XOx"/>
+                            <constraint firstItem="VAH-h1-PcZ" firstAttribute="trailing" secondItem="XhK-iH-Vqo" secondAttribute="trailing" id="eB8-n7-9rA"/>
+                            <constraint firstItem="VAH-h1-PcZ" firstAttribute="leading" secondItem="XhK-iH-Vqo" secondAttribute="leading" id="olS-NO-eJb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="XhK-iH-Vqo"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="VAH-h1-PcZ" id="0Tl-hn-jhr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Svh-ho-gxh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3210" y="634.85915492957747"/>
+        </scene>
+        <!--Audio Video View Controller-->
+        <scene sceneID="9iE-KA-p4w">
+            <objects>
+                <viewController storyboardIdentifier="AudioVideoViewController" id="SXe-l3-fgP" customClass="AudioVideoViewController" customModule="iOSTutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HoS-TB-Qwn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vVW-jn-nj1">
+                                <rect key="frame" x="88" y="210" width="152" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnStartClicked:" destination="SXe-l3-fgP" eventType="touchUpInside" id="AUB-bn-pLQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CSL-yH-pqj">
+                                <rect key="frame" x="88" y="337" width="152" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Stop">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnStopClicked:" destination="SXe-l3-fgP" eventType="touchUpInside" id="ywX-OO-r3K"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="UFg-pl-AdM"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sOr-De-FSk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4248.75" y="636.97183098591552"/>
         </scene>
         <!--Third View Controller-->
         <scene sceneID="eWY-kg-CGr">
@@ -420,6 +498,9 @@
                                 <state key="normal" title="Ok">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnOkClicked:" destination="lub-xw-qdB" eventType="touchUpInside" id="uoF-Wl-x70"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="signin" translatesAutoresizingMaskIntoConstraints="NO" id="F6s-wN-Er2">
                                 <rect key="frame" x="16" y="50" width="288" height="45"/>
@@ -598,6 +679,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="J4n-aU-RrK" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ggP-Qx-C6a">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -616,6 +698,6 @@
         <image name="signin" width="110" height="45"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="lOD-7u-x7D"/>
+        <segue reference="VXS-YH-w5b"/>
     </inferredMetricsTieBreakers>
 </document>

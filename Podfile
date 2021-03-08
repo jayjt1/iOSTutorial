@@ -7,6 +7,8 @@ pod 'Alamofire', '= 4.9.0'
 
 pod 'SwiftyJSON', '~> 4.0'
 
+pod 'SwiftKeychainWrapper', '~> 3.1'
+
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
